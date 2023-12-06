@@ -1,0 +1,20 @@
+.error_container {
+    background: #f9f9fc;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.error_container p {
+    font-weight: 700;
+    font-size: 31px;
+}
+
+.error_img {
+    width: 500px;
+}
+.error_img img {
+    width: 100%;
+}
