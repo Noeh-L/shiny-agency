@@ -86,9 +86,7 @@ const IconeAvailability = styled.div`
 
 function Profil() {
     const { id } = useParams()
-    const { data, isLoading, error } = useFetch(
-        `http://localhost:8000/freelance/?id=${id}`,
-    )
+    const { data, isLoading, error } = useFetch(`/freelance/?id=${id}`)
     const freelanceData = data.freelanceData
 
     const { theme } = useTheme()

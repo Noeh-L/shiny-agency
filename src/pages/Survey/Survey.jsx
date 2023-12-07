@@ -70,7 +70,7 @@ function Survey() {
         questionNumberInt === 1 ? 1 : questionNumberInt - 1
     const nextQuestionNumber = questionNumberInt + 1
 
-    const { data, isLoading, error } = useFetch('http://localhost:8000/survey')
+    const { data, isLoading, error } = useFetch('/survey')
     const { surveyData } = data // => équivaut à const surveyData = data.surveyData
 
     const { answers, saveAnswers } = useContext(SurveyContext)

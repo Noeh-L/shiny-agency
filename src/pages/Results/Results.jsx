@@ -77,9 +77,7 @@ function Results() {
     const { answers } = useContext(SurveyContext)
     const fetchParams = formatFetchParams(answers)
 
-    const { data, isLoading, error } = useFetch(
-        `http://localhost:8000/results?${fetchParams}`,
-    )
+    const { data, isLoading, error } = useFetch(`/results?${fetchParams}`)
 
     if (error) {
         return <span>Il y a un problème</span>
