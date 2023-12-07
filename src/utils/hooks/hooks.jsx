@@ -16,7 +16,9 @@ export function useFetch(url) {
 
         async function fetchData() {
             try {
-                const response = await fetch(url)
+                const response = await fetch(
+                    `https://shiny-agency-api.onrender.com${url}`,
+                )
                 const data = await response.json()
                 setData(data)
             } catch (err) {

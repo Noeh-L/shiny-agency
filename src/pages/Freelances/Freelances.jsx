@@ -29,9 +29,7 @@ const StyledParagraph = styled.p`
 `
 
 function Freelances() {
-    const { data, isLoading, error } = useFetch(
-        `http://localhost:8000/freelances`,
-    )
+    const { data, isLoading, error } = useFetch(`/freelances`)
     const { freelancersList } = data
 
     const { theme } = useTheme()
