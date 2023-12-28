@@ -48,7 +48,7 @@ function Home() {
                     Reperez vos besoins, on s'occupe du reste, avec les
                     meilleurs talents
                 </StyledH1>
-                <StyledLink to={'/survey'}>Faire le test</StyledLink>
+                <StyledLink to={'/survey/1'}>Faire le test</StyledLink>
             </StyledDiv>
             <div>
                 <img src={illustration} alt="Illustration de fiches" />
